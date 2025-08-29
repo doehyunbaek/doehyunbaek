@@ -1,7 +1,20 @@
 [project]
 name = "doehyunbaek"
 version = "0.1.0"
-description = "Add your description here"
+description = "Personal utilities"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = []
+
+[project.scripts]
+doehyunbaek = "doehyunbaek.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/doehyunbaek"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/doehyunbaek"]
