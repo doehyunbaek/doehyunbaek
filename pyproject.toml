@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "Personal utilities"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+  "zenodo-client",
+  "pystow",
+]
 
 [project.scripts]
 doehyunbaek = "doehyunbaek.main:main"
