@@ -21,7 +21,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     # Register subcommands here
     from .anon_to_zenodo import register_subcommand as register_anon_to_zenodo
+    from .devc_to_docker import register_subcommand as register_devc_to_docker
+
     register_anon_to_zenodo(sub)
+    register_devc_to_docker(sub)
 
     return parser
 
